@@ -3,16 +3,26 @@
 
     <!-- spacing -->
     <dimen name="spacing_4dp">4dp</dimen>
+    <dimen name="spacing_6dp">6dp</dimen>
+    <dimen name="spacing_8dp">8dp</dimen>
     <dimen name="spacing_10dp">10dp</dimen>
     <dimen name="spacing_16dp">16dp</dimen>
+    <dimen name="spacing_20dp">20dp</dimen>
     <dimen name="spacing_30dp">30dp</dimen>
     <dimen name="spacing_32dp">32dp</dimen>
+    <dimen name="spacing_40dp">40dp</dimen>
     <dimen name="spacing_50dp">50dp</dimen>
     <dimen name="spacing_56dp">56dp</dimen>
+    <dimen name="spacing_60dp">60dp</dimen>
     <dimen name="spacing_64dp">64dp</dimen>
+    <dimen name="spacing_65dp">65dp</dimen>
+    <dimen name="spacing_100dp">100dp</dimen>
+    <dimen name="spacing_300dp">300dp</dimen>
 
     <!--  text  -->
+    <dimen name="text_16sp">16sp</dimen>
     <dimen name="text_20sp">20sp</dimen>
     <dimen name="text_21sp">21sp</dimen>
+    <dimen name="text_28sp">28sp</dimen>
     <dimen name="text_30sp">30sp</dimen>
 </resources>
