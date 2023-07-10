@@ -2,7 +2,7 @@ package com.example.travelapplication.domains;
 
 import java.io.Serializable;
 
-public class itemsDomain implements Serializable {
+public class PopularDomain implements Serializable {
     private String title;
     private String location;
     private String description;
@@ -13,7 +13,7 @@ public class itemsDomain implements Serializable {
     private boolean wifi;
     private int price;
 
-    public itemsDomain(String title, String location, String description, int bed, boolean guide, double score, String pic, boolean wifi, int price) {
+    public PopularDomain(String title, String location, String description, int bed, boolean guide, double score, String pic, boolean wifi, int price) {
         this.title = title;
         this.location = location;
         this.description = description;
