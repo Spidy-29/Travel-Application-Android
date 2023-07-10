@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Travel Application</string>
+    <string name="let_s_enjoy_the_nbeautiful_world">Let\'s Enjoy The \nBeautiful World</string>
+    <string name="explore_new_places_in_the_world_n_and_get_new_expriences">Explore new places in the world\n and get new expriences</string>
+    <string name="get_started">Get Started</string>
 </resources>
