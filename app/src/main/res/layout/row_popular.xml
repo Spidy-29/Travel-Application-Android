@@ -43,6 +43,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/spacing_8dp"
             android:src="@drawable/marker"
+            android:tint="@color/black"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_title" />
 
@@ -51,7 +52,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/spacing_8dp"
-            android:text="@string/see_all"
+            android:text="location"
             android:textColor="@color/black"
             app:layout_constraintBottom_toBottomOf="@+id/iv_location"
             app:layout_constraintStart_toEndOf="@+id/iv_location"
@@ -74,6 +75,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/spacing_8dp"
             android:src="@drawable/star"
+            android:tint="@color/black"
             app:layout_constraintBottom_toBottomOf="@+id/iv_location"
             app:layout_constraintEnd_toStartOf="@+id/tv_star"
             app:layout_constraintTop_toTopOf="@+id/iv_location" />
