@@ -1,5 +1,6 @@
 package com.example.travelapplication.Adapter;
 
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,6 +14,7 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.resource.bitmap.CenterCrop;
 import com.bumptech.glide.load.resource.bitmap.GranularRoundedCorners;
 import com.example.travelapplication.R;
+import com.example.travelapplication.activity.DetailActivity;
 import com.example.travelapplication.domains.PopularDomain;
 
 import java.text.DecimalFormat;
@@ -21,11 +23,9 @@ import java.util.List;
 public class PopularAdapter extends RecyclerView.Adapter<PopularAdapter.popularViewHolder> {
 
     private final List<PopularDomain> list;
-    private final DecimalFormat decimalFormat;
 
     public PopularAdapter(List<PopularDomain> list) {
         this.list = list;
-        this.decimalFormat = new DecimalFormat("###,###,###");
     }
 
     @NonNull
@@ -43,8 +43,14 @@ public class PopularAdapter extends RecyclerView.Adapter<PopularAdapter.popularV
 
         int drawableResId = holder.itemView.getResources().getIdentifier(list.get(position).getPic(), "drawable", holder.itemView.getContext().getPackageName());
         Glide.with(holder.itemView.getContext()).load(drawableResId)
-                .transform(new CenterCrop(), new GranularRoundedCorners(40, 40, 40, 40))
+                .transform(new CenterCrop(), new GranularRoundedCorners(10, 10, 10, 10))
                 .into(holder.imageView);
+
+        holder.itemView.setOnClickListener(v -> {
+            Intent intent = new Intent(holder.itemView.getContext(), DetailActivity.class);
+            intent.putExtra("object",list.get(position));
+            holder.itemView.getContext().startActivity(intent);
+        });
     }
 
     @Override
