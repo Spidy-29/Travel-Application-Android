@@ -44,10 +44,11 @@
                 android:textSize="@dimen/text_20sp" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/introBtn"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/spacing_56dp"
                 android:layout_marginHorizontal="@dimen/spacing_32dp"
-                android:layout_marginTop="@dimen/spacing_64dp"
+                android:layout_marginVertical="@dimen/spacing_64dp"
                 android:background="@drawable/intro_background">
 
                 <TextView
